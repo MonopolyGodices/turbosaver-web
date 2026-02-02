@@ -1,0 +1,12 @@
+<!-- الصفحة الرئيسية - Turbo Saver -->
+<url>
+    <loc>https://turbodwn.com/</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- إشارات اللغات لمحركات البحث -->
+    <xhtml:link rel="alternate" hreflang="ar" href="https://turbodwn.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbodwn.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbodwn.com/"/>
+</url>

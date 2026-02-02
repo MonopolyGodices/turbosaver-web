@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO الأساسي -->
+    <title>Turbo Saver | تحميل فيديوهات تيك توك، فيسبوك، انستغرام بدون علامة مائية</title>
+    <meta name="description" content="أفضل موقع لتحميل الفيديوهات من تيك توك بدون علامة مائية، فيسبوك، انستغرام وتويتر. يدعم وضع النجمة 6 (*6) عبر التطبيق الرسمي. سريع ومجاني 100%.">
+    <meta name="keywords" content="تنزيل فيديو تيك توك, تحميل فيديوهات فيسبوك, *6, تنزيل فيديو انستغرام, TikTok Downloader no watermark, Facebook Video Downloader, Instagram Saver, Turbo Saver APK">
+    <link rel="canonical" href="https://turbodwn.com/">
+
+    <!-- Open Graph (للمشاركة على السوشيال ميديا) -->
+    <meta property="og:title" content="Turbo Saver - محمل الفيديوهات الخارق">
+    <meta property="og:description" content="حمل فيديوهاتك المفضلة من جميع المنصات بجودة عالية وبدون حقوق.">
+    <meta property="og:image" content="https://turbodwn.com/og-image.jpg"> <!-- ارفع صورة بهذا الاسم لاحقاً -->
+    <meta property="og:url" content="https://turbodwn.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org (بيانات جوجل المنظمة) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Turbo Saver",
+      "url": "https://turbodwn.com",
+      "description": "Online video downloader for TikTok, Facebook, and Instagram.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Android, Windows, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <!-- خطوط وأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#E91E63', dark: '#121212', surface: '#1E1E1E' },
+                    fontFamily: { cairo: ['Cairo', 'sans-serif'], roboto: ['Roboto', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #121212; color: white; transition: all 0.3s ease; }
+        body[lang="ar"] { font-family: 'Cairo', sans-serif; }
+        body[lang="en"] { font-family: 'Roboto', sans-serif; }
+        .gradient-text { background: linear-gradient(to right, #E91E63, #FF9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .loader { border: 4px solid #f3f3f3; border-top: 4px solid #E91E63; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; display: none; margin: 10px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- التنقل -->
+    <nav class="p-4 bg-surface shadow-lg sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-bolt text-primary text-2xl" aria-hidden="true"></i>
+                <span class="text-xl font-bold">Turbo Saver</span>
+            </div>
+            <div class="flex gap-4 items-center">
+                <button onclick="toggleLanguage()" class="text-gray-300 hover:text-primary font-bold text-sm border border-gray-600 px-3 py-1 rounded transition" aria-label="Switch Language">
+                    <i class="fa-solid fa-globe"></i> <span id="langBtnText">English</span>
+                </button>
+                <a href="#download-app" class="bg-primary hover:bg-pink-700 text-white px-4 py-2 rounded-full font-bold transition flex items-center gap-2">
+                    <i class="fa-brands fa-android"></i> <span data-i18n="nav_download">تحميل التطبيق</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الهيدر الرئيسي (يحتوي على H1 المهم للـ SEO) -->
+    <header class="text-center py-16 px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4">
+            <span data-i18n="hero_title_1">حمل فيديوهاتك</span> <span class="gradient-text" data-i18n="hero_title_2">بسرعة البرق</span>
+        </h1>
+        <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto" data-i18n="hero_desc">
+            أفضل أداة مجانية لتنزيل الفيديوهات من تيك توك، فيسبوك، وانستغرام. حمل الآن بدون علامة مائية وبأعلى جودة ممكنة.
+        </p>
+
+        <!-- أداة التحميل -->
+        <div class="bg-surface p-6 rounded-2xl shadow-2xl max-w-3xl mx-auto border border-gray-700">
+            <h2 class="text-start text-sm mb-4 text-primary font-bold uppercase tracking-widest" data-i18n="tool_title">أداة التحميل الأونلاين</h2>
+            <div class="flex flex-col md:flex-row gap-2">
+                <input type="text" id="urlInput" placeholder="Paste link here..." class="w-full p-4 rounded-lg bg-dark border border-gray-700 focus:border-primary focus:outline-none text-white text-left" dir="ltr">
+                <button onclick="fetchVideo()" class="bg-primary hover:bg-pink-700 text-white px-8 py-4 rounded-lg font-bold text-lg min-w-[150px] flex justify-center items-center gap-2 transition transform active:scale-95">
+                    <span data-i18n="btn_download">تحميل</span> <i class="fa-solid fa-download"></i>
+                </button>
+            </div>
+            <div id="loader" class="loader"></div>
+            <div id="resultArea" class="mt-6 hidden"></div>
+        </div>
+    </header>
+
+    <!-- الكلمات المفتاحية المخفية قليلاً لتحسين الأرشفة -->
+    <section class="hidden">
+        <h2>تحميل فيديو تيك توك بدون علامة مائية</h2>
+        <h2>تنزيل فيديوهات فيسبوك بجودة عالية</h2>
+        <h2>برنامج تحميل الفيديوهات انستغرام</h2>
+        <h2>Download TikTok video without watermark online</h2>
+    </section>
+
+    <!-- المميزات -->
+    <section class="py-12 bg-surface">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10" data-i18n="features_title">خدمات Turbo Saver المجانية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="p-6 bg-dark rounded-xl border border-gray-800">
+                    <i class="fa-brands fa-tiktok text-5xl text-pink-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="feat_1_title">تيك توك بدون علامة</h3>
+                    <p class="text-gray-400" data-i18n="feat_1_desc">نحن نوفر أسرع طريقة لتحميل فيديوهات TikTok بصيغة MP4 وبدون أي علامات مائية.</p>
+                </article>
+                <article class="p-6 bg-dark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-wifi text-5xl text-yellow-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="feat_2_title">دعم عرض النجمة 6</h3>
+                    <p class="text-gray-400" data-i18n="feat_2_desc">خاصية فريدة تتيح لك تصفح وتحميل الفيديوهات باستخدام اشتراك *6 (عرض النجمة 6) في المغرب.</p>
+                </article>
+                <article class="p-6 bg-dark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-bolt text-5xl text-blue-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="feat_3_title">سرعة فائقة</h3>
+                    <p class="text-gray-400" data-i18n="feat_3_desc">خوادمنا المتطورة تمنحك سرعة تحميل لا تقارن، حتى مع أحجام الفيديوهات الكبيرة.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- زر التحميل APK -->
+    <section id="download-app" class="py-20 text-center bg-dark">
+        <div class="container mx-auto px-4 border border-dashed border-primary/30 py-10 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-4" data-i18n="app_sec_title">هل تريد المزيد؟</h2>
+            <p class="text-gray-300 mb-8" data-i18n="app_sec_desc">حمل تطبيق Turbo Saver للأندرويد واستمتع بميزة التحميل بوضع النجمة 6، وحفظ حالات واتساب بضغطة واحدة.</p>
+            <a href="TurboSaver.apk" class="inline-flex items-center gap-4 bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-2xl text-xl font-bold shadow-2xl transition transform hover:-translate-y-1">
+                <i class="fa-brands fa-android text-4xl"></i>
+                <div class="text-start">
+                    <div class="text-xs font-light opacity-80 uppercase">Free Download</div>
+                    <div data-i18n="btn_apk">تحميل ملف APK</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-black py-10 text-center text-gray-500 text-sm border-t border-gray-900">
+        <div class="mb-4 space-x-4 space-x-reverse">
+            <a href="#" class="hover:text-primary">Privacy Policy</a>
+            <a href="#" class="hover:text-primary">Terms of Service</a>
+            <a href="mailto:contact@turbodwn.com" class="hover:text-primary">Contact Us</a>
+        </div>
+        <p data-i18n="footer_rights">&copy; 2026 Turbo Saver. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            ar: {
+                nav_download: "تحميل التطبيق",
+                hero_title_1: "حمل فيديوهاتك",
+                hero_title_2: "بسرعة البرق",
+                hero_desc: "أفضل أداة مجانية لتنزيل الفيديوهات من تيك توك، فيسبوك، وانستغرام. حمل الآن بدون علامة مائية وبأعلى جودة ممكنة.",
+                tool_title: "أداة التحميل الأونلاين",
+                input_label: "ضع الرابط هنا (TikTok, FB, Insta):",
+                btn_download: "تحميل",
+                features_title: "خدمات Turbo Saver المجانية",
+                feat_1_title: "تيك توك بدون علامة",
+                feat_1_desc: "نحن نوفر أسرع طريقة لتحميل فيديوهات TikTok بصيغة MP4 وبدون أي علامات مائية.",
+                feat_2_title: "دعم عرض النجمة 6",
+                feat_2_desc: "خاصية فريدة تتيح لك تصفح وتحميل الفيديوهات باستخدام اشتراك *6 (عرض النجمة 6) في المغرب.",
+                feat_3_title: "سرعة فائقة",
+                feat_3_desc: "خوادمنا المتطورة تمنحك سرعة تحميل لا تقارن، حتى مع أحجام الفيديوهات الكبيرة.",
+                app_sec_title: "هل تريد المزيد؟",
+                app_sec_desc: "حمل تطبيق Turbo Saver للأندرويد واستمتع بميزة التحميل بوضع النجمة 6، وحفظ حالات واتساب بضغطة واحدة.",
+                btn_apk: "تحميل ملف APK",
+                footer_rights: "&copy; 2026 Turbo Saver. جميع الحقوق محفوظة.",
+                error_url: "المرجو وضع رابط صحيح!",
+                download_vid: "تحميل الفيديو",
+                download_aud: "تحميل الصوت"
+            },
+            en: {
+                nav_download: "Get App",
+                hero_title_1: "Download Videos",
+                hero_title_2: "Lightning Fast",
+                hero_desc: "The best free tool to download videos from TikTok, Facebook, and Instagram. Download now without watermark in HD.",
+                tool_title: "Online Download Tool",
+                input_label: "Paste link here (TikTok, FB, Insta):",
+                btn_download: "Download",
+                features_title: "Turbo Saver Free Services",
+                feat_1_title: "TikTok No Watermark",
+                feat_1_desc: "We provide the fastest way to download TikTok videos in MP4 format without any watermark.",
+                feat_2_title: "*6 Mode Support",
+                feat_2_desc: "Unique feature allowing you to browse and download videos using *6 data plan in Morocco.",
+                feat_3_title: "Turbo Speed",
+                feat_3_desc: "Our advanced servers give you unparalleled download speed even for large video files.",
+                app_sec_title: "Want More Features?",
+                app_sec_desc: "Download Turbo Saver app for Android to enjoy *6 mode and one-click WhatsApp status saver.",
+                btn_apk: "Download APK File",
+                footer_rights: "&copy; 2026 Turbo Saver. All rights reserved.",
+                error_url: "Please enter a valid URL!",
+                download_vid: "Download Video",
+                download_aud: "Download Audio"
+            }
+        };
+
+        let currentLang = 'ar';
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.documentElement.dir = (lang === 'ar' ? 'rtl' : 'ltr');
+            document.getElementById('langBtnText').innerText = (lang === 'ar' ? 'English' : 'العربية');
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('turbo_lang', lang);
+        }
+
+        function toggleLanguage() { setLanguage(currentLang === 'ar' ? 'en' : 'ar'); }
+
+        window.onload = function() {
+            const saved = localStorage.getItem('turbo_lang');
+            if (saved) setLanguage(saved);
+            else setLanguage((navigator.language || navigator.userLanguage).startsWith('ar') ? 'ar' : 'en');
+        };
+
+        async function fetchVideo() {
+            const url = document.getElementById('urlInput').value;
+            const loader = document.getElementById('loader');
+            const resultArea = document.getElementById('resultArea');
+            const t = translations[currentLang];
+            if (!url) { alert(t.error_url); return; }
+            loader.style.display = 'block';
+            resultArea.innerHTML = '';
+            resultArea.classList.add('hidden');
+            try {
+                const res = await fetch(`https://www.tikwm.com/api/?url=${url}`);
+                const data = await res.json();
+                loader.style.display = 'none';
+                if (data.data) {
+                    const video = data.data;
+                    resultArea.innerHTML = `
+                        <div class="flex flex-col md:flex-row gap-6 items-center bg-dark p-6 rounded-xl border border-gray-700">
+                            <img src="${video.cover}" class="w-40 h-40 object-cover rounded-lg">
+                            <div class="text-start flex-1">
+                                <h3 class="font-bold text-lg mb-4 text-gray-200">${video.title || 'Video Result'}</h3>
+                                <div class="flex gap-3 flex-wrap">
+                                    <a href="https://www.tikwm.com${video.play}" target="_blank" class="bg-primary px-6 py-2 rounded-lg font-bold"> <i class="fa-solid fa-play"></i> ${t.download_vid}</a>
+                                    <a href="${video.music}" target="_blank" class="bg-gray-700 px-6 py-2 rounded-lg font-bold"> <i class="fa-solid fa-music"></i> ${t.download_aud}</a>
+                                </div>
+                            </div>
+                        </div>`;
+                    resultArea.classList.remove('hidden');
+                } else {
+                    resultArea.innerHTML = `<p class="text-red-500">Video not supported here. Try using the App for Facebook/Instagram.</p>`;
+                    resultArea.classList.remove('hidden');
+                }
+            } catch (e) { loader.style.display = 'none'; }
+        }
+    </script>
+</body>
+</html>
+
